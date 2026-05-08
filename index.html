@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para Public Service UX Redesign Lab</title>
+  <meta name="description" content="UX redesign lab for a fictional public service page, with checklist, wireframe notes, and accessible HTML/CSS.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-mode="ux">
+  <header>
+    <div class="topbar">
+      <div class="brand"><span class="mark">I</span><span>Para Public Service UX Redesign Lab</span></div>
+      <nav aria-label="Primary navigation">
+        <a href="#practice">Practice</a>
+        <a href="#output">Output</a>
+        <a href="#privacy">Data policy</a>
+      </nav>
+      <button class="ghost" id="themeToggle" type="button">Theme</button>
+    </div>
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Prototype a clearer public-service experience.</h1>
+        <p>Use a fictional service page to document usability issues and propose a more accessible redesign.</p>
+        <div class="toolbar">
+          <a class="button" href="#practice">Start lab</a>
+          <button class="secondary" id="exportButton" type="button">Export report</button>
+        </div>
+      </div>
+      <aside class="panel">
+        <h2>I-05 Snapshot</h2>
+        <p>Website Design | Intermediate</p>
+        <div class="grid">
+          <div class="metric"><strong>5</strong><span>heuristics</span></div>
+          <div class="metric"><strong>WCAG</strong><span>notes</span></div>
+          <div class="metric"><strong>Wireframe</strong><span>ready</span></div>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section id="practice">
+      <h2>Practice Surface</h2>
+      <div class="grid" id="cards"></div>
+    </section>
+
+    <section class="grid two" id="output">
+      <div class="panel">
+        <h2>Interactive Output</h2>
+        <div id="dynamicSurface"></div>
+      </div>
+      <div class="panel">
+        <h2>Progress</h2>
+        <div id="progressList"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="privacy">
+      <h2>Data Policy</h2>
+      <p>Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.</p>
+      <p>All demo content is synthetic and local. No form or metric is submitted to a backend.</p>
+    </section>
+  </main>
+
+  <footer>
+    Technical Computing | Website Design | MIT License
+  </footer>
+
+  <script id="projectData" type="application/json">{"title":"Para Public Service UX Redesign Lab","code":"I-05","discipline":"Website Design","notice":"Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.","features":[{"name":"Nielsen heuristics","score":72},{"name":"visual hierarchy","score":76},{"name":"WCAG awareness","score":80},{"name":"wireframe thinking","score":84},{"name":"service design","score":88}],"headline":"Prototype a clearer public-service experience.","summary":"Use a fictional service page to document usability issues and propose a more accessible redesign.","cards":["Visibility","Consistency","Error prevention","Readable hierarchy"],"metrics":["5 heuristics","WCAG notes","Wireframe ready"]}</script>
+  <script src="script.js"></script>
+</body>
+</html>
