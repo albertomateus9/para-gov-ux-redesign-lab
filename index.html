@@ -1,73 +1,64 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Para Public Service UX Redesign Lab</title>
-  <meta name="description" content="UX redesign lab for a fictional public service page, with checklist, wireframe notes, and accessible HTML/CSS.">
+  <title>Laboratorio UX De Servico Publico Paraense</title>
+  <meta name="description" content="Redesign ficticio de servico publico com checklist de usabilidade, hierarquia e acessibilidade.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-mode="ux">
+<body data-mode="lab">
   <header>
     <div class="topbar">
-      <div class="brand"><span class="mark">I</span><span>Para Public Service UX Redesign Lab</span></div>
-      <nav aria-label="Primary navigation">
-        <a href="#practice">Practice</a>
-        <a href="#output">Output</a>
-        <a href="#privacy">Data policy</a>
+      <div class="brand"><span class="mark">I</span><span>Laboratorio UX De Servico Publico Paraense</span></div>
+      <nav aria-label="Navegação principal">
+        <a href="#roteiro">Roteiro</a>
+        <a href="#pratica">Prática</a>
+        <a href="#dados">Dados</a>
       </nav>
-      <button class="ghost" id="themeToggle" type="button">Theme</button>
+      <button class="ghost" id="themeToggle" type="button">Contraste</button>
     </div>
     <section class="hero">
       <div class="hero-copy">
-        <h1>Prototype a clearer public-service experience.</h1>
-        <p>Use a fictional service page to document usability issues and propose a more accessible redesign.</p>
+        <p class="eyebrow">I-05 | Designer De Websites</p>
+        <h1>Laboratorio UX De Servico Publico Paraense</h1>
+        <p>Redesign ficticio de servico publico com checklist de usabilidade, hierarquia e acessibilidade.</p>
         <div class="toolbar">
-          <a class="button" href="#practice">Start lab</a>
-          <button class="secondary" id="exportButton" type="button">Export report</button>
+          <a class="button" href="#pratica">Iniciar laboratório</a>
+          <button class="secondary" id="exportButton" type="button">Exportar relatório</button>
         </div>
       </div>
       <aside class="panel">
-        <h2>I-05 Snapshot</h2>
-        <p>Website Design | Intermediate</p>
-        <div class="grid">
-          <div class="metric"><strong>5</strong><span>heuristics</span></div>
-          <div class="metric"><strong>WCAG</strong><span>notes</span></div>
-          <div class="metric"><strong>Wireframe</strong><span>ready</span></div>
-        </div>
+        <h2>Roteiro rápido</h2>
+        <div class="metric"><strong>1</strong><span>Problema</span></div>
+        <div class="metric"><strong>3</strong><span>Evidências</span></div>
+        <div class="metric"><strong>0</strong><span>Backend</span></div>
       </aside>
     </section>
   </header>
-
   <main>
-    <section id="practice">
-      <h2>Practice Surface</h2>
+    <section id="roteiro">
+      <h2>Roteiro da Aula</h2>
       <div class="grid" id="cards"></div>
     </section>
-
-    <section class="grid two" id="output">
+    <section class="grid two" id="pratica">
       <div class="panel">
-        <h2>Interactive Output</h2>
+        <h2>Superfície Interativa</h2>
         <div id="dynamicSurface"></div>
       </div>
       <div class="panel">
-        <h2>Progress</h2>
+        <h2>Critérios de Evidência</h2>
         <div id="progressList"></div>
       </div>
     </section>
-
-    <section class="panel" id="privacy">
-      <h2>Data Policy</h2>
-      <p>Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.</p>
-      <p>All demo content is synthetic and local. No form or metric is submitted to a backend.</p>
+    <section class="panel" id="dados">
+      <h2>Política de Dados</h2>
+      <p>Projeto educacional inspirado na EETEPA Vilhena Alves. Não é sistema oficial institucional e não usa dados reais de estudantes.</p>
+      <p>Todo conteúdo é sintético, local e seguro para portfólio público. Nenhum formulário é enviado para backend.</p>
     </section>
   </main>
-
-  <footer>
-    Technical Computing | Website Design | MIT License
-  </footer>
-
-  <script id="projectData" type="application/json">{"title":"Para Public Service UX Redesign Lab","code":"I-05","discipline":"Website Design","notice":"Educational project inspired by EETEPA Vilhena Alves. It is not an official institutional system and does not use real student data.","features":[{"name":"Nielsen heuristics","score":72},{"name":"visual hierarchy","score":76},{"name":"WCAG awareness","score":80},{"name":"wireframe thinking","score":84},{"name":"service design","score":88}],"headline":"Prototype a clearer public-service experience.","summary":"Use a fictional service page to document usability issues and propose a more accessible redesign.","cards":["Visibility","Consistency","Error prevention","Readable hierarchy"],"metrics":["5 heuristics","WCAG notes","Wireframe ready"]}</script>
+  <footer>Tecnico Em Informatica | Designer De Websites | Licença MIT</footer>
+  <script id="projectData" type="application/json">{"title":"Laboratorio UX De Servico Publico Paraense","code":"I-05","course":"Tecnico Em Informatica","discipline":"Designer De Websites","description":"Redesign ficticio de servico publico com checklist de usabilidade, hierarquia e acessibilidade.","features":["planejamento da solução","organização visual","evidência local","apresentação em equipe"],"cards":["Missão guiada","Evidência local","Discussão em equipe","Melhoria incremental"]}</script>
   <script src="script.js"></script>
 </body>
 </html>
